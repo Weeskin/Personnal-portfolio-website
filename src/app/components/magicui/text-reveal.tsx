@@ -27,13 +27,13 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
 		>
 			<div
 				className={
-					"sticky top-0 mx-auto flex h-[50%] max-w-8xl items-center bg-transparent px-[1rem] py-[5rem]"
+					"sticky top-0 flex h-[50%] max-w-8xl items-center bg-transparent px-[1rem]"
 				}
 			>
 				<p
 					ref={targetRef}
 					className={
-						"flex flex-wrap p-5 text-3xl font-bold text-black/20 dark:text-white/20 sm:text-5xl l md:p-8 md:text-7xl lg:p-10 lg:text-6xl xl:text-6xl"
+						"flex flex-wrap text-3xl font-bold text-black/20 dark:text-white/20 sm:text-5xl md:text-7xl lg:text-6xl xl:text-6xl"
 					}
 				>
 					{words.map((word, i) => {
