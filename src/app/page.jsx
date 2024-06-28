@@ -16,6 +16,7 @@ export default function Home() {
 			<BackgroundBeams />
 			<Cursor />
 			<Navbar />
+			<div></div>
 			<div className="w-full align-middle mx-auto justify-items-center">
 				<HeroSection />
 				<AboutSection />
