@@ -34,8 +34,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background-color: #5270d3;
   /* Set the desired background color here */
@@ -60,12 +60,6 @@ body {
     height: 0;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
   }
-}
-
-.cursor-text {
-  font-size: medium;
-  letter-spacing: 1px;
-  display: none;
 }
 
 a,

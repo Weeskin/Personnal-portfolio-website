@@ -105,7 +105,7 @@ export const ProjectParallax = ({
 export const Header = () => {
 	return (
 		<div className="w-full xl:px-60 relative left-0 top-0 py-64 mx-auto">
-			<h1 className="px-[1rem] max-w-8xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-bold dark:text-white">
+			<h1 className="px-[1rem] max-w-8xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl font-bold dark:text-white">
 				Mes projets <br /> récents
 			</h1>
 			<p className="px-[1rem] max-w-5xl text-base sm:text-2xl md:text-4xl lg:text-3xl xl:text-3xl mt-8 dark:text-neutral-200">

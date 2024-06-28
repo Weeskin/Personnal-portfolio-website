@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
+import AchievementSection from "./AchievementsSection";
 
 const AnimatedNumbers = dynamic(
 	() => {
@@ -43,6 +44,7 @@ export default function AchievementsSection() {
 						>
 							<h2 className="text-white text-4xl font-bold flex flex-row">
 								{achievement.prefix}
+								<AchievementSection />
 								<AnimatedNumbers
 									includeComma
 									animateToNumber={parseInt(achievement.value)}

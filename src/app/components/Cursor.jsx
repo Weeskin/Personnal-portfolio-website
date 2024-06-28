@@ -40,7 +40,7 @@ export default function Cursor() {
 	return (
 		<div
 			id="custom-cursor"
-			className="custom-cursor"
+			className="custom-cursor spotlight"
 		>
 			<div className="cursor-text"></div>
 		</div>
