@@ -88,40 +88,34 @@ export default function AboutSection() {
 				/>
 				<div className="m-6 md:m-0 text-left flex flex-col h-full">
 					<p className="text-base lg:text-lg text-justify">
-						Je suis un développeur web passionné par la création d'applications
-						web interactives et réactives. J'ai de l'expérience dans le travail
-						avec JavaScript, React, Redux, Node.js, TailwindCSS, Typecript,
-						HTML, CSS et Git. Je'apprendrant rapidement et je cherche toujours à
-						élargir mes connaissances et mes compétences.
+						{
+							"Je suis un développeur web passionné par la création d'applications web interactives et réactives. J'ai de l'expérience dans le travail avec JavaScript, React, Redux, Node.js, TailwindCSS, Typecript, HTML, CSS et Git. J'apprends rapidement et je cherche toujours à élargir mes connaissances et mes compétences."
+						}
 					</p>
 					<div className="flex flex-row justify-start mt-8">
 						<TabButton
 							selectTab={() => handleTabChange("skills")}
 							active={tab === "skills"}
 						>
-							{" "}
-							Skills{" "}
+							Skills
 						</TabButton>
 						<TabButton
 							selectTab={() => handleTabChange("formation")}
 							active={tab === "formation"}
 						>
-							{" "}
-							Formation{" "}
+							Formation
 						</TabButton>
 						<TabButton
 							selectTab={() => handleTabChange("certifications")}
 							active={tab === "certifications"}
 						>
-							{" "}
-							Certifications{" "}
+							Certifications
 						</TabButton>
 						<TabButton
 							selectTab={() => handleTabChange("experiences")}
 							active={tab === "experiences"}
 						>
-							{" "}
-							Expériences{" "}
+							Expériences
 						</TabButton>
 					</div>
 					<div className="mt-8">
