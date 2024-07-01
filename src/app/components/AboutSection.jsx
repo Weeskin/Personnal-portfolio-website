@@ -37,7 +37,7 @@ const TAB_DATA = [
 		content: (
 			<ul className="list-disc pl-2">
 				<li>Intégrateur Web</li>
-				<li>Initiez-vous àla gestion de projet agile</li>
+				<li>Initiez-vous à la gestion de projet agile</li>
 				<li>Comprendre le web</li>
 				<li>Référencement SEO</li>
 				<li>Animation moderne avec CSS</li>
@@ -51,7 +51,7 @@ const TAB_DATA = [
 			<ul className="list-disc pl-2">
 				<li>Webdesigner - 1 an - QRU Entreprise</li>
 				<li>Support Informatique - 4 ans - Experis France</li>
-				<li>Agent d'accueil - 2 ans - Cinéma le 6Rex </li>
+				<li>Agent d&apos;accueil - 2 ans - Cinéma le 6Rex </li>
 				<li>Guide accompagnateur tourisme - 2 ans - Caves de la Chartreuse </li>
 			</ul>
 		)
