@@ -58,7 +58,7 @@ export const ProjectParallax = ({
 		<section
 			ref={ref}
 			id="projects"
-			className="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex w-full flex-col h-[200vh] overflow-hidden  antialiased relative sflex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+			className="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex w-full flex-col h-[200vh] overflow-hidden relative sflex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
 		>
 			<Header />
 			<motion.div
@@ -105,10 +105,10 @@ export const ProjectParallax = ({
 export const Header = () => {
 	return (
 		<div className="w-full xl:px-60 relative left-0 top-0 py-64 mx-auto">
-			<h1 className="px-[1rem] max-w-8xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl font-bold dark:text-white">
+			<h1 className="px-[1rem] max-w-8xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl font-bold text-white">
 				Mes projets <br /> récents
 			</h1>
-			<p className="px-[1rem] max-w-5xl text-base sm:text-2xl md:text-4xl lg:text-3xl xl:text-3xl mt-8 dark:text-neutral-200">
+			<p className="px-[1rem] max-w-5xl text-base sm:text-2xl md:text-4xl lg:text-3xl xl:text-3xl mt-8 text-white">
 				Je crée de magnifiques produits avec les dernières technologies et
 				frameworks. Développeur passionné, je suis toujours à la recherche de
 				nouveaux défis.
