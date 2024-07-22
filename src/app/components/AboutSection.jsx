@@ -67,14 +67,14 @@ export default function AboutSection() {
 		});
 	};
 	return (
-		<section
-			className="text-white xl:px-60"
-			id="about"
-		>
+		<section className="text-white xl:px-60">
 			<div className="flex min-h-10 md:min-h-[16rem] items-center justify-center">
 				<TextReveal text="Transformez vos idées en expériences numériques époustouflantes." />
 			</div>
-			<h2 className="text-7xl text-center font-bold capitalize antialiased mb-16">
+			<h2
+				className="text-7xl text-center font-bold capitalize antialiased mb-16"
+				id="about"
+			>
 				Mes skills
 			</h2>
 			<div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 ">
