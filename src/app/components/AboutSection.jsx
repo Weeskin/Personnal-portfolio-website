@@ -1,5 +1,4 @@
 "use client";
-import TextReveal from "./magicui/text-reveal";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
