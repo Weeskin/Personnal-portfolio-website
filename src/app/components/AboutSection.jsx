@@ -68,9 +68,6 @@ export default function AboutSection() {
 	};
 	return (
 		<section className="text-white xl:px-60">
-			<div className="flex min-h-10 md:min-h-[16rem] items-center justify-center">
-				<TextReveal text="Transformez vos idées en expériences numériques époustouflantes." />
-			</div>
 			<h2
 				className="text-7xl text-center font-bold capitalize antialiased mb-16"
 				id="about"
