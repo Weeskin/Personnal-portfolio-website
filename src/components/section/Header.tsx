@@ -25,7 +25,7 @@ export default function Header() {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 
 	return (
-		<nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-20 bg-[#121212] bg-opacity-100">
+		<nav className="z-9999 fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-20 bg-[#121212] bg-opacity-100">
 			<div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
 				<Image
 					src={Logo}

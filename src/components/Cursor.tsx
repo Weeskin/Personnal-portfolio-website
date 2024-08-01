@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 
 export interface CursorProps {
 	isHovered: boolean;
@@ -23,7 +23,7 @@ export default function Cursor({ isHovered }: CursorProps) {
 		gsap.set(circle.current, { x, y, xPercent: -50, yPercent: -50 });
 	};
 
-	const animate = () => {
+	const animate = useCallback(() => {
 		const { x, y } = delayedMouse.current;
 		delayedMouse.current = {
 			x: lerp(x, mouse.current.x, 0.075),
@@ -31,7 +31,7 @@ export default function Cursor({ isHovered }: CursorProps) {
 		};
 		moveCircle(delayedMouse.current.x, delayedMouse.current.y);
 		window.requestAnimationFrame(animate);
-	};
+	}, []);
 
 	useEffect(() => {
 		animate();

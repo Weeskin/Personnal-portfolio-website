@@ -1,3 +1,4 @@
+"use client";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "../TabButton";
@@ -55,7 +56,7 @@ const TAB_DATA: TabData[] = [
 			<ul className="list-disc pl-2">
 				<li>Webdesigner - 1 an - QRU Entreprise</li>
 				<li>Support Informatique - 4 ans - Experis France</li>
-				<li>Agent d'accueil - 2 ans - Cinéma le 6Rex </li>
+				<li>Agent d&apos;accueil - 2 ans - Cinéma le 6Rex </li>
 				<li>Guide accompagnateur tourisme - 2 ans - Caves de la Chartreuse </li>
 			</ul>
 		)

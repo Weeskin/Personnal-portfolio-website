@@ -1,3 +1,4 @@
+"use client";
 import GithubIcon from "../../assets/images/github-icon.svg";
 import LinkedinIcon from "../../assets/images/linkedin-icon.svg";
 import Image from "next/image";
@@ -104,9 +105,9 @@ export default function EmailSection() {
 					Restons en contact
 				</h5>
 				<p className="text-[#ADB7BE] mb-4 max-w-md">
-					Actuellement en recherche de nouvelles opportunités, n'hésitez pas à
-					me joindre via le formulaire de contact, je n'hésiterai pas à vous
-					répondre!
+					Actuellement en recherche de nouvelles opportunités, n&apos;hésitez
+					pas à me joindre via le formulaire de contact, je n&apos;hésiterai pas
+					à vous répondre!
 				</p>
 				<p className="text-[#ADB7BE] mb-4 max-w-md">2 Rue Marius Charles</p>
 				<p className="text-[#ADB7BE] mb-4 max-w-md">38420 Domène, France</p>

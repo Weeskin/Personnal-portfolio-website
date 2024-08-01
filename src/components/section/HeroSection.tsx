@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
@@ -18,7 +19,7 @@ export default function HeroSection(props: HeroSectionProps) {
 
 	return (
 		<section
-			className="z-40 px-12 py-28 md:py-96 xl:px-60"
+			className="px-12 py-28 md:py-96 xl:px-60"
 			ref={targetRef}
 		>
 			<Cursor isHovered={isHovered} />
