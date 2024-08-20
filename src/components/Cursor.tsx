@@ -6,7 +6,7 @@ export interface CursorProps {
 }
 
 export default function Cursor({ isHovered }: CursorProps) {
-	const size = isHovered ? 300 : 100;
+	const size = isHovered ? 300 : 50;
 	const mouse = useRef({ x: 0, y: 0 });
 	const circle = useRef<HTMLDivElement>(null);
 
@@ -42,12 +42,11 @@ export default function Cursor({ isHovered }: CursorProps) {
 	return (
 		<div
 			ref={circle}
-			id="custom-cursor"
-			className=" fixed top-0 left-0 bg-blue-800 rounded-full mix-blend-difference pointer-events-none"
+			className=" fixed top-0 left-0 bg-blue-900 rounded-full mix-blend-difference pointer-events-none"
 			style={{
 				width: size,
 				height: size,
-				filter: "blur(10px)"
+				filter: "blur(20px)"
 			}}
 		></div>
 	);
