@@ -92,7 +92,7 @@ export default function HeroSection(props: HeroSectionProps) {
 					className="col-span-4 place-self-center mt-4 lg:mt-0"
 				>
 					<div className="col-span-4 place-self-center mt-10 lg:-mt-8">
-						<div className="w-60 h-60 sm:w-44 sm:h-44 md:w-50 md:h-50 lg:w-64 lg:h-64 xl:w-80 xl:h-80 relative">
+						<div className="w-60 h-60 sm:w-44 sm:h-44 md:w-50 md:h-50 lg:w-64 lg:h-64 xl:w-72 xl:h-72 relative">
 							<Image
 								src={photoProfil}
 								title="Photo de profil de Pierre"
