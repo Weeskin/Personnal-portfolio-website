@@ -2,7 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "../TabButton";
-import AboutImage from "../../assets/images/about-image.webp";
+import AboutImage from "/public/assets/images/about-image.webp";
 
 interface TabData {
 	title: string;

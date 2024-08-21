@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ShineBorder from "../magicui/shine-border";
-import photoProfil from "../../assets/images/photo_de_profil_3.png";
+import photoProfil from "/public/assets/images/photo_de_profil_3.png";
 import Cursor from "../../components/Cursor";
 
 interface HeroSectionProps {

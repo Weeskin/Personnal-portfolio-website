@@ -1,9 +1,9 @@
 // src/components/ProjectsSection.jsx
 "use client";
 import React, { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import ProjectCard from "../ProjectCard";
 import ProjectTag from "../ProjectTag";
-import { motion, useInView } from "framer-motion";
 import projectsData from "../../data/projects.json";
 
 export default function ProjectsSection() {

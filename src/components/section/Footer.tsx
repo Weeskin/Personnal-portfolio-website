@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/android-chrome-512x512.webp";
+import Logo from "/public/assets/images/android-chrome-512x512.webp";
 import Image from "next/image";
 
 export default function Footer() {
