@@ -27,7 +27,7 @@ export default function ProjectsSection() {
 	return (
 		<section
 			id="projects"
-			className="flex sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden flex-col mx-12"
+			className="flex flex-col mx-12"
 		>
 			<h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 hover:-translate-y-6 hover:duration-500 transition ease-in-out duration-500">
 				Mes projets

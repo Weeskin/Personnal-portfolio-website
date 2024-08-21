@@ -3,7 +3,7 @@
 		"id": 1,
 		"title": "Premier site en HTML/CSS",
 		"description": "Site Riding Cities - HTML/CSS",
-		"image": "/images/projects/1.webp",
+		"image": "/assets/images/projects/1.webp",
 		"tag": ["Tous", "Web"],
 		"gitUrl": "https://github.com/Weeskin/P2_-_Site-Riding-Citites-PS.git",
 		"previewUrl": "https://weeskin.github.io/P02_-_Site-Riding-Citites-PS/"
@@ -12,7 +12,7 @@
 		"id": 2,
 		"title": "Agence de Voyage Booki",
 		"description": "Site Booki - HTML/CSS",
-		"image": "/images/projects/2.webp",
+		"image": "/assets/images/projects/2.webp",
 		"tag": ["Tous", "Web"],
 		"gitUrl": "https://github.com/Weeskin/P3_-_Site-Booki-PS.git",
 		"previewUrl": "https://weeskin.github.io/P03_-_Site-Booki-PS/"
@@ -21,7 +21,7 @@
 		"id": 3,
 		"title": "Amélioration des animations CSS",
 		"description": "Site Ohmyfood - HTML/CSS",
-		"image": "/images/projects/3.webp",
+		"image": "/assets/images/projects/3.webp",
 		"tag": ["Tous", "Web", "Mobile"],
 		"gitUrl": "https://github.com/Weeskin/P4_-_Site-Ohmyfood-PS.git",
 		"previewUrl": "https://weeskin.github.io/P04_-_Site-Ohmyfood-PS/"
@@ -30,7 +30,7 @@
 		"id": 4,
 		"title": "Première création en JavaScript",
 		"description": "Site Print it - JavaScript",
-		"image": "/images/projects/4.webp",
+		"image": "/assets/images/projects/4.webp",
 		"tag": ["Tous", "Web", "Mobile"],
 		"gitUrl": "https://github.com/Weeskin/P05_-_Print-it-JS-main-PS.git",
 		"previewUrl": "https://weeskin.github.io/P05_-_Print-it-JS-main-PS/"
@@ -39,54 +39,54 @@
 		"id": 5,
 		"title": "JavaScript avec API",
 		"description": "Site de Sophie Bluel - Architecte d'intérieur - JavaScript",
-		"image": "/images/projects/5.webp",
+		"image": "/assets/images/projects/5.webp",
 		"tag": ["Tous", "Web"],
 		"gitUrl": "https://github.com/Weeskin/P06-Site-Sophie-Bluel-Architecte-PS.git",
-		"previewUrl": "/images/projects/5.webp"
+		"previewUrl": "/assets/images/projects/5.webp"
 	},
 	{
 		"id": 6,
 		"title": "Planification de projet Full-stack",
 		"description": "Planification de projet avec Qwenta",
-		"image": "/images/projects/6.webp",
+		"image": "/assets/images/projects/6.webp",
 		"tag": ["Tous", "Web"],
 		"gitUrl": "https://github.com/Weeskin/P07_-_Planifiez_le_developpement_du_site_de_votre_client.git",
-		"previewUrl": "/images/projects/6.webp"
+		"previewUrl": "/assets/images/projects/6.webp"
 	},
 	{
 		"id": 7,
 		"title": "Début de React",
 		"description": "Site de Location immobilière - React",
-		"image": "/images/projects/7.webp",
+		"image": "/assets/images/projects/7.webp",
 		"tag": ["Tous", "Mobile"],
 		"gitUrl": "https://github.com/Weeskin/P08_-_Location_immobiliere_avec_react.git",
-		"previewUrl": "/images/projects/7.webp"
+		"previewUrl": "/assets/images/projects/7.webp"
 	},
 	{
 		"id": 8,
 		"title": "Optimisation du SEO",
 		"description": "Site de Nina Carducci - Photographie - SEO",
-		"image": "/images/projects/8.webp",
+		"image": "/assets/images/projects/8.webp",
 		"tag": ["Tous", "Web", "Mobile"],
 		"gitUrl": "https://github.com/Weeskin/P09_-_Optimisez_le-referencement_d_un_site_de_photographe.git",
-		"previewUrl": "/images/projects/8.webp"
+		"previewUrl": "/assets/images/projects/8.webp"
 	},
 	{
 		"id": 9,
 		"title": "Debeugage d'une application React avec DevTools",
 		"description": "Site d'une agence d'événementielle - 724 Events - React",
-		"image": "/images/projects/9.webp",
+		"image": "/assets/images/projects/9.webp",
 		"tag": ["Tous", "Web"],
 		"gitUrl": "https://github.com/Weeskin/P10_-_Debuggez-une-application-React.JS-main.git",
-		"previewUrl": "/images/projects/9.webp"
+		"previewUrl": "/assets/images/projects/9.webp"
 	},
 	{
 		"id": 10,
 		"title": "Création d'une application bancaire",
 		"description": "Site d'une nouvelle application bancaire - ArgenBank - React",
-		"image": "/images/projects/10.webp",
+		"image": "/assets/images/projects/10.webp",
 		"tag": ["Tous", "Web"],
 		"gitUrl": "https://github.com/Weeskin/P11_ArgentBank-website.git",
-		"previewUrl": "/images/projects/10.webp"
+		"previewUrl": "/assets/images/projects/10.webp"
 	}
 ]

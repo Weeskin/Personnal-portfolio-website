@@ -38,7 +38,6 @@ export default function Home() {
 						<HeroSection />
 						<AboutSection />
 						<ProjectsSection />
-						<ProjectsParallaxSection />
 						<EmailSection />
 					</div>
 					<Footer />
