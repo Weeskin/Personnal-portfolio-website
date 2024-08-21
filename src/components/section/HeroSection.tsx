@@ -1,12 +1,11 @@
 "use client";
-import React, { useRef } from "react";
-import Image from "next/image";
+import React, { useRef, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import ShineBorder from "../magicui/shine-border";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import ShineBorder from "../magicui/shine-border";
 import photoProfil from "../../assets/images/photo_de_profil_3.png";
 import Cursor from "../../components/Cursor";
-import { useState } from "react";
 
 interface HeroSectionProps {
 	isHovered: boolean;
@@ -96,10 +95,10 @@ export default function HeroSection(props: HeroSectionProps) {
 						<div className="w-60 h-60 sm:w-44 sm:h-44 md:w-50 md:h-50 lg:w-64 lg:h-64 xl:w-80 xl:h-80 relative">
 							<Image
 								src={photoProfil}
+								title="Photo de profil de Pierre"
 								alt="Photo de profil de Pierre"
 								className="absolute hover:-translate-y-6 hover:duration-500 transform transition ease-in-out duration-500"
 								loading="lazy"
-								layout="fill"
 								sizes="(max-width: 640px) 33vw, (max-width: 768px) 100vw, (max-width: 1200px) 50vw"
 							/>
 						</div>
