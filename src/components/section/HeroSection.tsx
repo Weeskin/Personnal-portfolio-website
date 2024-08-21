@@ -18,10 +18,9 @@ export default function HeroSection(props: HeroSectionProps) {
 
 	return (
 		<section
-			className="px-12 py-28 md:py-96 xl:px-60"
+			className="h-full m-12 px-12 py-28 md:py-96 xl:px-60"
 			ref={targetRef}
 		>
-			<Cursor isHovered={isHovered} />
 			<div className="grid grid-cols-1 md:grid-cols-12">
 				<motion.div
 					initial={{ opacity: 0, scale: 0.5 }}
