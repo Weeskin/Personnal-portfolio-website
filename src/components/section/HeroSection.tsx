@@ -73,7 +73,7 @@ export default function HeroSection(props: HeroSectionProps) {
 								</ShineBorder>
 							</a>
 							<a
-								href="./images/cv_Pierre_Sourice_2024.pdf"
+								href="../../../assets/images/cv_Pierre_Sourice_2024.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
