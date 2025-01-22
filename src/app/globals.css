@@ -47,7 +47,6 @@ li {
 
 
 .profil {
-
   &::before,
   &::after {
     content: "";
@@ -138,7 +137,6 @@ li {
   }
 }
 
-
 @keyframes shadow-rotate {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -147,4 +145,19 @@ li {
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger-menu .line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
 }

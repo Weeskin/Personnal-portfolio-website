@@ -1,11 +1,9 @@
-"use client";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ShineBorder from "../magicui/shine-border";
 import photoProfil from "/public/assets/images/photo_de_profil_3.png";
-import Cursor from "../../components/Cursor";
 
 interface HeroSectionProps {
 	isHovered: boolean;
@@ -13,8 +11,19 @@ interface HeroSectionProps {
 
 export default function HeroSection(props: HeroSectionProps) {
 	const targetRef = useRef<HTMLDivElement>(null);
-
 	const [isHovered, setHovered] = useState(false);
+	const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsSmallScreen(window.innerWidth <= 640);
+		};
+
+		window.addEventListener("resize", handleResize);
+		handleResize();
+
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
 
 	return (
 		<section
@@ -36,25 +45,27 @@ export default function HeroSection(props: HeroSectionProps) {
 									<br />
 									{""}
 								</div>
-								<TypeAnimation
-									sequence={[
-										"Développeur Web",
-										1000,
-										"Développeur Frontend",
-										1000,
-										"Designer",
-										1000
-									]}
-									wrapper="span"
-									speed={7}
-									style={{
-										fontSize: "1.1em",
-										display: "inline-block",
-										lineHeight: "1.4em",
-										marginBottom: "0.5em"
-									}}
-									repeat={Infinity}
-								/>
+								{!isSmallScreen && (
+									<TypeAnimation
+										sequence={[
+											"Développeur Web",
+											1000,
+											"Développeur Frontend",
+											1000,
+											"Designer",
+											1000
+										]}
+										wrapper="span"
+										speed={7}
+										style={{
+											fontSize: "1.1em",
+											display: "inline-block",
+											lineHeight: "1.4em",
+											marginBottom: "0.5em"
+										}}
+										repeat={Infinity}
+									/>
+								)}
 							</h1>
 						</div>
 
