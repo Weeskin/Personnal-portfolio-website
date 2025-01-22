@@ -1,11 +1,10 @@
-"use client";
+ "use client";
 import Head from "next/head";
 import Cursor from "../components/Cursor";
 import Header from "../components/section/Header";
 import HeroSection from "../components/section/HeroSection";
 import AboutSection from "../components/section/AboutSection";
 import ProjectsSection from "../components/section/ProjectSection";
-import ProjectsParallaxSection from "../components/ProjectSectionParallax";
 import EmailSection from "../components/section/EmailSection";
 import Footer from "../components/section/Footer";
 import { PageProvider } from "../components/context/pageContext";
