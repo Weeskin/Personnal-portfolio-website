@@ -6,7 +6,7 @@ export interface CursorProps {
 }
 
 export default function Cursor({ isHovered }: CursorProps) {
-	const size = isHovered ? 300 : 50;
+	const size = isHovered ? 100 : 50;
 	const mouse = useRef({ x: 0, y: 0 });
 	const circle = useRef<HTMLDivElement>(null);
 

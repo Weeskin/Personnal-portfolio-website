@@ -27,7 +27,7 @@ export default function HeroSection(props: HeroSectionProps) {
 
 	return (
 		<section
-			className="h-full m-12 px-12 py-28 md:py-96 xl:px-60"
+			className="h-full m-12 px-12 py-28 md:pt-35 pb-16 xl:px-60"
 			ref={targetRef}
 		>
 			<div className="grid grid-cols-1 md:grid-cols-12">
@@ -37,9 +37,9 @@ export default function HeroSection(props: HeroSectionProps) {
 					transition={{ duration: 0.5 }}
 					className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
 				>
-					<div className="col-span-7 place-self-center text-center sm:text-left w-full">
-						<div className="h-36 mb-4 sm:h-36 md:h-44 lg:h-64">
-							<h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold h-auto lg:h-48">
+					<div className="col-span-7 place-self-center text-center sm:text-left w-full h-full">
+						<div className="h-20 mb-4 sm:h-36 md:h-44 lg:h-64">
+							<h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold h-auto lg:h-full">
 								<div className="text-transparent bg-clip-text bg-gradient-to-br from-premiere-800 via-intermediaire-500 to-secondaire-500 mb-6">
 									Pierre Sourice
 									<br />
@@ -48,11 +48,11 @@ export default function HeroSection(props: HeroSectionProps) {
 								{!isSmallScreen && (
 									<TypeAnimation
 										sequence={[
-											"Développeur Web",
-											1000,
-											"Développeur Frontend",
-											1000,
 											"Designer",
+											1000,
+											"Graphiste",
+											1000,
+											"UI/UX Lead",
 											1000
 										]}
 										wrapper="span"
@@ -69,9 +69,9 @@ export default function HeroSection(props: HeroSectionProps) {
 							</h1>
 						</div>
 
-						<p className="text-justify text-[#ADB7BE] text-base sm:text-lg my-20 lg:text-xl">
+						<p className="text-justify text-white text-base sm:text-lg my-20 lg:text-xl">
 							{
-								"Actuellement à la recherche de nouvelles opportunités, je suis ouvert à des collaborations stimulantes. N'hésitez pas à me contacter pour plus d'informations."
+								"Actuellement en formation pour devenir développeur front-end, je suis ouvert à des collaborations stimulantes. N'hésitez pas à me contacter pour plus d'informations."
 							}
 						</p>
 						<div className="flex flex-col sm:flex-row items-center md:justify-items-center md:mt-8 gap-6 sm:gap-10">
