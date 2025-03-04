@@ -14,7 +14,7 @@ import { BackgroundBeams } from "../components/ui/background-beams";
 export default function Home() {
 	return (
 		<PageProvider>
-			<main className="flex min-h-screen flex-col">
+			<main className="flex min-h-screen flex-col bg-black">
 				<Head>
 					<link
 						rel="icon"
