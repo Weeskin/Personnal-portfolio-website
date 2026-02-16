@@ -4,7 +4,7 @@
 /* Google Sans - Polices locales */
 @font-face {
   font-family: 'Google Sans';
-  src: url('@/assets/font/GoogleSans-Regular.ttf') format('truetype');
+  src: url('../assets/font/GoogleSans-Regular.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'Google Sans';
-  src: url('@/assets/font/GoogleSans-Italic.ttf') format('truetype');
+  src: url('../assets/font/GoogleSans-Italic.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -26,11 +26,11 @@ html {
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-poppins: "Poppins", sans-serif;
+  --font-google-sans: "Google Sans", sans-serif;
 }
 
 @theme {
-  --font-poppins: var(--font-poppins);
+  --font-google-sans: var(--font-google-sans);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 }
@@ -45,7 +45,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Google Sans", sans-serif;
+  font-family: var(--font-google-sans), "Google Sans", sans-serif;
 }
 
 /* Snap scrolling pour les sections */

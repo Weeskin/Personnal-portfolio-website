@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ['var(--font-google-sans)', 'sans-serif'],
         'google-sans': ['var(--font-google-sans)', 'sans-serif'],
       },
       animation: {
@@ -64,4 +65,3 @@ const config: Config = {
 }
 
 export default config
-
