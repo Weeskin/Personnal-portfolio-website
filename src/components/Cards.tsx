@@ -3,7 +3,7 @@ import Image from 'next/image';
 import dataProjects from '@/Data/dataProjects.json';
 
 interface ProjectCardProps {
-    id: number,
+    id: string,
     title: string,
     description: string,
     cover: string,

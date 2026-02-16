@@ -1,6 +1,6 @@
 [
 	{
-		"id": 1,
+		"id": "edm09fcs",
 		"title": "Premier site en HTML/CSS",
 		"description": "Site Riding Cities - HTML/CSS",
 		"details": "Projet d'initiation aux bases HTML/CSS avec mise en page responsive, structure semantique et bonnes pratiques.",
@@ -10,7 +10,7 @@
 		"previewUrl": "https://weeskin.github.io/P02_-_Site-Riding-Citites-PS/"
 	},
 	{
-		"id": 2,
+		"id": "b7p3k9wq",
 		"title": "Agence de Voyage Booki",
 		"description": "Site Booki - HTML/CSS",
 		"details": "Integration complete d'une maquette avec gestion des breakpoints et validation W3C pour un rendu propre.",
@@ -20,7 +20,7 @@
 		"previewUrl": "https://weeskin.github.io/P03_-_Site-Booki-PS/"
 	},
 	{
-		"id": 3,
+		"id": "k2r8m1zx",
 		"title": "Amélioration des animations CSS",
 		"description": "Site Ohmyfood - HTML/CSS",
 		"details": "Creation d'animations CSS fluides, transitions et effets d'apparition pour enrichir l'experience utilisateur.",
@@ -30,7 +30,7 @@
 		"previewUrl": "https://weeskin.github.io/P04_-_Site-Ohmyfood-PS/"
 	},
 	{
-		"id": 4,
+		"id": "t5n0q7vj",
 		"title": "Première création en JavaScript",
 		"description": "Site Print it - JavaScript",
 		"details": "Mise en place d'un carrousel et de comportements dynamiques en JavaScript vanilla.",
@@ -40,7 +40,7 @@
 		"previewUrl": "https://weeskin.github.io/P05_-_Print-it-JS-main-PS/"
 	},
 	{
-		"id": 5,
+		"id": "r9c4h2pl",
 		"title": "JavaScript avec API",
 		"description": "Site de Sophie Bluel - Architecte d'intérieur - JavaScript",
 		"details": "Connexion a une API, gestion du back-office et manipulation du DOM pour un workflow complet.",
@@ -50,7 +50,7 @@
 		"previewUrl": "/assets/images/projects/05.webp"
 	},
 	{
-		"id": 6,
+		"id": "m6x1s8qd",
 		"title": "Planification de projet Full-stack",
 		"description": "Planification de projet avec Qwenta",
 		"details": "Analyse des besoins, redaction de cahier des charges et planification agile du developpement.",
@@ -60,7 +60,7 @@
 		"previewUrl": "/assets/images/projects/6.webp"
 	},
 	{
-		"id": 7,
+		"id": "u3g9y5nf",
 		"title": "Début de React",
 		"description": "Site de Location immobilière - React",
 		"details": "Premiere application React avec composants reutilisables, routing et etat local.",
@@ -70,7 +70,7 @@
 		"previewUrl": "/assets/images/projects/07.webp"
 	},
 	{
-		"id": 8,
+		"id": "p8d2l0sk",
 		"title": "Optimisation du SEO",
 		"description": "Site de Nina Carducci - Photographie - SEO",
 		"details": "Optimisation des performances, accessibilite et SEO pour ameliorer les scores Lighthouse.",
@@ -80,7 +80,7 @@
 		"previewUrl": "/assets/images/projects/08.webp"
 	},
 	{
-		"id": 9,
+		"id": "v1j7a4rm",
 		"title": "Debeugage d'une application React avec DevTools",
 		"description": "Site d'une agence d'événementielle - 724 Events - React",
 		"details": "Diagnostic d'erreurs, correction de bugs et optimisation du rendu avec React DevTools.",
@@ -90,7 +90,7 @@
 		"previewUrl": "/assets/images/projects/09.webp"
 	},
 	{
-		"id": 10,
+		"id": "z4e6t3bn",
 		"title": "Création d'une application bancaire",
 		"description": "Site d'une nouvelle application bancaire - ArgenBank - React",
 		"details": "Application complete avec authentification, gestion d'etat et integration API.",
