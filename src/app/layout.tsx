@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
-      <body className={`${robotoMono.variable}`}>
+      <body className={`${robotoMono.variable} font-mono`}>
         {children}
       </body>
     </html>

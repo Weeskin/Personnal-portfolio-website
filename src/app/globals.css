@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -22,5 +27,123 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto-mono), "Roboto Mono", monospace;
+}
+
+/* Snap scrolling pour les sections */
+.snap-section {
+  scroll-snap-align: start;
+  scroll-margin-top: 4rem; /* Compense le header fixe */
+}
+
+/* Carrousel avec scroll-buttons pour les projets 7-12 */
+.carousel-scroll-container {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.carousel-page {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.carousel-page .grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style standard des scroll-buttons (CSS Overflow Level 4 - Expérimental) */
+.carousel-scroll-container::scroll-button(inline-end) {
+  display: block;
+  background-color: cadetblue;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='20' font-weight='bold'%3E→%3C/text%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel-scroll-container::scroll-button(inline-start) {
+  display: block;
+  background-color: cadetblue;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='20' font-weight='bold'%3E←%3C/text%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Fallback WebKit pour les navigateurs qui ne supportent pas ::scroll-button() */
+.carousel-scroll-container::-webkit-scrollbar {
+  height: 4rem;
+}
+
+.carousel-scroll-container::-webkit-scrollbar-button:horizontal:increment {
+  background-color: cadetblue;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='20' font-weight='bold'%3E→%3C/text%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel-scroll-container::-webkit-scrollbar-button:horizontal:decrement {
+  background-color: cadetblue;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='20' font-weight='bold'%3E←%3C/text%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel-scroll-container::-webkit-scrollbar-track {
+  background: rgba(24, 24, 24, 0.3);
+}
+
+.carousel-scroll-container::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+.carousel-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-page {
+    padding: 0 1rem;
+  }
+
+  .carousel-scroll-container::-webkit-scrollbar {
+    height: 3rem;
+  }
+
+  .carousel-scroll-container::-webkit-scrollbar-button:horizontal:increment,
+  .carousel-scroll-container::-webkit-scrollbar-button:horizontal:decrement {
+    width: 3rem;
+    height: 3rem;
+  }
 }

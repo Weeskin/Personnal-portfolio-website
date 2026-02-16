@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"title": "Premier site en HTML/CSS",
+		"description": "Site Riding Cities - HTML/CSS",
+		"cover": "/assets/images/projects/01.webp",
+		"tag": ["Tous", "Web"],
+		"gitUrl": "https://github.com/Weeskin/P2_-_Site-Riding-Citites-PS.git",
+		"previewUrl": "https://weeskin.github.io/P02_-_Site-Riding-Citites-PS/"
+	},
+	{
+		"id": 2,
+		"title": "Agence de Voyage Booki",
+		"description": "Site Booki - HTML/CSS",
+		"cover": "/assets/images/projects/02.webp",
+		"tag": ["Tous", "Web"],
+		"gitUrl": "https://github.com/Weeskin/P3_-_Site-Booki-PS.git",
+		"previewUrl": "https://weeskin.github.io/P03_-_Site-Booki-PS/"
+	},
+	{
+		"id": 3,
+		"title": "Amélioration des animations CSS",
+		"description": "Site Ohmyfood - HTML/CSS",
+		"cover": "/assets/images/projects/03.webp",
+		"tag": ["Tous", "Web", "Mobile"],
+		"gitUrl": "https://github.com/Weeskin/P4_-_Site-Ohmyfood-PS.git",
+		"previewUrl": "https://weeskin.github.io/P04_-_Site-Ohmyfood-PS/"
+	},
+	{
+		"id": 4,
+		"title": "Première création en JavaScript",
+		"description": "Site Print it - JavaScript",
+		"cover": "/assets/images/projects/04.webp",
+		"tag": ["Tous", "Web", "Mobile"],
+		"gitUrl": "https://github.com/Weeskin/P05_-_Print-it-JS-main-PS.git",
+		"previewUrl": "https://weeskin.github.io/P05_-_Print-it-JS-main-PS/"
+	},
+	{
+		"id": 5,
+		"title": "JavaScript avec API",
+		"description": "Site de Sophie Bluel - Architecte d'intérieur - JavaScript",
+		"cover": "/assets/images/projects/05.webp",
+		"tag": ["Tous", "Web"],
+		"gitUrl": "https://github.com/Weeskin/P06-Site-Sophie-Bluel-Architecte-PS.git",
+		"previewUrl": "/assets/images/projects/05.webp"
+	},
+	{
+		"id": 6,
+		"title": "Planification de projet Full-stack",
+		"description": "Planification de projet avec Qwenta",
+		"cover": "/assets/images/projects/06.webp",
+		"tag": ["Tous", "Web"],
+		"gitUrl": "https://github.com/Weeskin/P07_-_Planifiez_le_developpement_du_site_de_votre_client.git",
+		"previewUrl": "/assets/images/projects/6.webp"
+	},
+	{
+		"id": 7,
+		"title": "Début de React",
+		"description": "Site de Location immobilière - React",
+		"cover": "/assets/images/projects/07.webp",
+		"tag": ["Tous", "Mobile"],
+		"gitUrl": "https://github.com/Weeskin/P08_-_Location_immobiliere_avec_react.git",
+		"previewUrl": "/assets/images/projects/07.webp"
+	},
+	{
+		"id": 8,
+		"title": "Optimisation du SEO",
+		"description": "Site de Nina Carducci - Photographie - SEO",
+		"cover": "/assets/images/projects/08.webp",
+		"tag": ["Tous", "Web", "Mobile"],
+		"gitUrl": "https://github.com/Weeskin/P09_-_Optimisez_le-referencement_d_un_site_de_photographe.git",
+		"previewUrl": "/assets/images/projects/08.webp"
+	},
+	{
+		"id": 9,
+		"title": "Debeugage d'une application React avec DevTools",
+		"description": "Site d'une agence d'événementielle - 724 Events - React",
+		"cover": "/assets/images/projects/09.webp",
+		"tag": ["Tous", "Web"],
+		"gitUrl": "https://github.com/Weeskin/P10_-_Debuggez-une-application-React.JS-main.git",
+		"previewUrl": "/assets/images/projects/09.webp"
+	},
+	{
+		"id": 10,
+		"title": "Création d'une application bancaire",
+		"description": "Site d'une nouvelle application bancaire - ArgenBank - React",
+		"cover": "/assets/images/projects/10.webp",
+		"tag": ["Tous", "Web"],
+		"gitUrl": "https://github.com/Weeskin/P11_ArgentBank-website.git",
+		"previewUrl": "/assets/images/projects/10.webp"
+	}
+]
