@@ -32,12 +32,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
     return (
       <main className="min-h-screen flex items-center justify-center px-6 py-16">
         <div className="text-center space-y-4">
-          <h1 className="text-3xl font-bold">Ah ! Ce n'etait pas là qu'il fallait aller</h1>
+          <h1 className="text-3xl font-bold">Ah ! Ce n&apos;était pas là qu&apos;il fallait aller</h1>
           <p className="text-gray-600 dark:text-gray-300">
-            Retour a l'accueil pour continuer la visite.
+            Retour a l&apos;accueil pour continuer la visite.
           </p>
           <Link href="/" className="text-blue-600 hover:underline">
-            Retour a l'accueil
+            Retour a l&apos;accueil
           </Link>
         </div>
       </main>

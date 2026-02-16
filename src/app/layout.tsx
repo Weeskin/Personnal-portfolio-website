@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pierresourice.fr"),
   title: "Site personnel de Pierre Sourice",
   description:
       "Développeur Frontend, passionné du design et du développement web. Je suis expert en création de sites web, dédié à répondre aux exigences spécifiques de chaque client.",
+  icons: {
+    icon: "/assets/logo/logo.ico"
+  },
 
   openGraph: {
     title: "Pierre SOURICE - Développeur Frontend",
@@ -14,10 +18,10 @@ export const metadata: Metadata = {
     url: "https://pierresourice.fr",
     images: [
       {
-        type: "image/jpeg",
-        width: 1200,
-        height: 630,
-        url: "https://res.cloudinary.com/duqrhths8/image/upload/v1721987131/Logo_hq2fas.ico"
+        type: "image/png",
+        width: 1740,
+        height: 1740,
+        url: "/assets/logo/logo.png"
       }
     ],
     siteName: "Pierre SOURICE - Développeur Frontend",
