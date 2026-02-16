@@ -1,6 +1,6 @@
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
-import {Cards} from "@/components/Cards";
+import {Carousel} from "@/components/Carousel";
 import {Banner} from "@/components/Banner";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
                     <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
                         Mes Projets
                     </h2>
-                    <Cards/>
+                    <Carousel/>
                 </section>
 
                 <section id="contact" className="snap-section min-h-screen py-16 px-4 sm:px-8 lg:px-16 flex items-center justify-center">

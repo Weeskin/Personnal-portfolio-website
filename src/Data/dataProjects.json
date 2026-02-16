@@ -5,7 +5,7 @@
 		"description": "Site Riding Cities - HTML/CSS",
 		"details": "Projet d'initiation aux bases HTML/CSS avec mise en page responsive, structure semantique et bonnes pratiques.",
 		"cover": "/assets/images/projects/01.webp",
-		"tag": ["Tous", "Web"],
+		"tag": ["HTML", "CSS"],
 		"gitUrl": "https://github.com/Weeskin/P2_-_Site-Riding-Citites-PS.git",
 		"previewUrl": "https://weeskin.github.io/P02_-_Site-Riding-Citites-PS/"
 	},
@@ -15,7 +15,7 @@
 		"description": "Site Booki - HTML/CSS",
 		"details": "Integration complete d'une maquette avec gestion des breakpoints et validation W3C pour un rendu propre.",
 		"cover": "/assets/images/projects/02.webp",
-		"tag": ["Tous", "Web"],
+		"tag": ["HTML", "CSS"],
 		"gitUrl": "https://github.com/Weeskin/P3_-_Site-Booki-PS.git",
 		"previewUrl": "https://weeskin.github.io/P03_-_Site-Booki-PS/"
 	},
@@ -25,7 +25,7 @@
 		"description": "Site Ohmyfood - HTML/CSS",
 		"details": "Creation d'animations CSS fluides, transitions et effets d'apparition pour enrichir l'experience utilisateur.",
 		"cover": "/assets/images/projects/03.webp",
-		"tag": ["Tous", "Web", "Mobile"],
+		"tag": ["HTML", "SCSS"],
 		"gitUrl": "https://github.com/Weeskin/P4_-_Site-Ohmyfood-PS.git",
 		"previewUrl": "https://weeskin.github.io/P04_-_Site-Ohmyfood-PS/"
 	},
@@ -35,7 +35,7 @@
 		"description": "Site Print it - JavaScript",
 		"details": "Mise en place d'un carrousel et de comportements dynamiques en JavaScript vanilla.",
 		"cover": "/assets/images/projects/04.webp",
-		"tag": ["Tous", "Web", "Mobile"],
+		"tag": ["HTML", "SCSS", "JAVASCRIPT"],
 		"gitUrl": "https://github.com/Weeskin/P05_-_Print-it-JS-main-PS.git",
 		"previewUrl": "https://weeskin.github.io/P05_-_Print-it-JS-main-PS/"
 	},
@@ -45,7 +45,7 @@
 		"description": "Site de Sophie Bluel - Architecte d'intérieur - JavaScript",
 		"details": "Connexion a une API, gestion du back-office et manipulation du DOM pour un workflow complet.",
 		"cover": "/assets/images/projects/05.webp",
-		"tag": ["Tous", "Web"],
+		"tag": ["HTML", "SCSS", "JAVASCRIPT"],
 		"gitUrl": "https://github.com/Weeskin/P06-Site-Sophie-Bluel-Architecte-PS.git",
 		"previewUrl": "/assets/images/projects/05.webp"
 	},
@@ -55,7 +55,7 @@
 		"description": "Planification de projet avec Qwenta",
 		"details": "Analyse des besoins, redaction de cahier des charges et planification agile du developpement.",
 		"cover": "/assets/images/projects/06.webp",
-		"tag": ["Tous", "Web"],
+		"tag": ["HTML", "SCSS", "JAVASCRIPT", "PLANIFICATION"],
 		"gitUrl": "https://github.com/Weeskin/P07_-_Planifiez_le_developpement_du_site_de_votre_client.git",
 		"previewUrl": "/assets/images/projects/6.webp"
 	},
@@ -65,7 +65,7 @@
 		"description": "Site de Location immobilière - React",
 		"details": "Premiere application React avec composants reutilisables, routing et etat local.",
 		"cover": "/assets/images/projects/07.webp",
-		"tag": ["Tous", "Mobile"],
+		"tag": ["REACT", "ROUTER", "HTML", "SCSS"],
 		"gitUrl": "https://github.com/Weeskin/P08_-_Location_immobiliere_avec_react.git",
 		"previewUrl": "/assets/images/projects/07.webp"
 	},
@@ -75,7 +75,7 @@
 		"description": "Site de Nina Carducci - Photographie - SEO",
 		"details": "Optimisation des performances, accessibilite et SEO pour ameliorer les scores Lighthouse.",
 		"cover": "/assets/images/projects/08.webp",
-		"tag": ["Tous", "Web", "Mobile"],
+		"tag": ["REACT", "ROUTER", "HTML", "SCSS"],
 		"gitUrl": "https://github.com/Weeskin/P09_-_Optimisez_le-referencement_d_un_site_de_photographe.git",
 		"previewUrl": "/assets/images/projects/08.webp"
 	},
@@ -85,7 +85,7 @@
 		"description": "Site d'une agence d'événementielle - 724 Events - React",
 		"details": "Diagnostic d'erreurs, correction de bugs et optimisation du rendu avec React DevTools.",
 		"cover": "/assets/images/projects/09.webp",
-		"tag": ["Tous", "Web"],
+		"tag": ["HTML", "CSS", "JAVASCRIPT"],
 		"gitUrl": "https://github.com/Weeskin/P10_-_Debuggez-une-application-React.JS-main.git",
 		"previewUrl": "/assets/images/projects/09.webp"
 	},
@@ -95,7 +95,7 @@
 		"description": "Site d'une nouvelle application bancaire - ArgenBank - React",
 		"details": "Application complete avec authentification, gestion d'etat et integration API.",
 		"cover": "/assets/images/projects/10.webp",
-		"tag": ["Tous", "Web"],
+		"tag": ["REACT", "ROUTER", "HTML", "SCSS"],
 		"gitUrl": "https://github.com/Weeskin/P11_ArgentBank-website.git",
 		"previewUrl": "/assets/images/projects/10.webp"
 	}

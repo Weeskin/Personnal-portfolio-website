@@ -12,8 +12,14 @@ interface ProjectCardProps {
     previewUrl: string
 }
 
-export function Cards() {
-    const cardSheet = dataProjects.slice(0, 6).map((project : ProjectCardProps) => {
+interface CardsProps {
+    projects?: ProjectCardProps[];
+}
+
+export function Cards({ projects }: CardsProps) {
+    const projectsToDisplay = projects || (dataProjects as ProjectCardProps[]).slice(0, 6);
+
+    const cardSheet = projectsToDisplay.map((project: ProjectCardProps) => {
         return (
             <Link
                 key={project.id}
@@ -41,3 +47,4 @@ export function Cards() {
         </section>
     );
 }
+
