@@ -2,6 +2,7 @@ import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import {Carousel} from "@/components/Carousel";
 import {Banner} from "@/components/Banner";
+import {ContactForm} from "@/components/ContactForm";
 
 export default function Home() {
     return (
@@ -18,13 +19,14 @@ export default function Home() {
                 </section>
 
                 <section id="contact" className="snap-section min-h-screen py-16 px-4 sm:px-8 lg:px-16 flex items-center justify-center">
-                    <div className="text-center">
-                        <h2 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
-                            Contact
+                    <div className="w-full max-w-4xl">
+                        <h2 className="text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">
+                            Contactez-moi
                         </h2>
-                        <p className="text-xl text-gray-600 dark:text-gray-300">
-                            Section contact à venir...
+                        <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+                            Une question ? Un projet ? N&apos;hésitez pas à me contacter via ce formulaire.
                         </p>
+                        <ContactForm />
                     </div>
                 </section>
             </main>

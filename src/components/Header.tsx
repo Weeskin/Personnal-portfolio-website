@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 export function Header() {
     const scrollToSection = (sectionId: string) => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -15,7 +13,7 @@ export function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('home')}
-                            className="text-foreground/60 hover:text-foreground transition-colors"
+                            className="text-foreground/60 hover:text-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-foreground after:transition-all hover:after:w-full cursor-pointer"
                         >
                             Présentation
                         </button>
@@ -23,7 +21,7 @@ export function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('projects')}
-                            className="text-foreground/60 hover:text-foreground transition-colors"
+                            className="text-foreground/60 hover:text-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-foreground after:transition-all hover:after:w-full cursor-pointer"
                         >
                             Projets
                         </button>
@@ -31,11 +29,19 @@ export function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('contact')}
-                            className="text-foreground/60 hover:text-foreground transition-colors"
+                            className="text-foreground/60 hover:text-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-foreground after:transition-all hover:after:w-full cursor-pointer"
                         >
                             Contact
                         </button>
                     </li>
+                    <a
+                        href="/assets/cv/CV-Pierre.pdf"
+                        download="CV-Pierre.pdf"
+                        className="rounded-2xl border border-gray-500 px-4 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors inline-block"
+                    >
+                        Télécharger CV
+                    </a>
+
                     <li>
                         <a
                             href="https://linkedin.com"
