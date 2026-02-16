@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { Google_Sans } from "next/font/google";
 import "./globals.css";
 
-const robotoMono = Roboto_Mono({
-  variable: "--font-roboto-mono",
+const googleSans = Google_Sans({
+  variable: "--font-google-sans",
   subsets: ["latin"],
   display: 'swap',
 });
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr">
-      <body className={`${robotoMono.variable} font-mono`}>
+      <body className={`${googleSans.variable} font-google`}>
         {children}
       </body>
     </html>
