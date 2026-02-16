@@ -8,7 +8,7 @@ export function Banner() {
     return (
         <section id="home" className="snap-section w-full h-screen flex flex-col items-center justify-center relative">
             <div className="text-center space-y-6">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-shadow-black">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-shadow-black slide-in-left">
                     Bienvenue sur mon <span className="span-animation">Portfolio</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-500">
