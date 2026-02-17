@@ -33,7 +33,7 @@ export function Carousel() {
     };
 
     return (
-        <div className="w-full flex items-center justify-center gap-4 px-4">
+        <div className="w-full flex items-center justify-center gap-4 px-4 mx-auto xl:max-w-3/4 2xl:px-80">
             {/* Flèche gauche */}
             {currentPage > 0 && (
                 <button
