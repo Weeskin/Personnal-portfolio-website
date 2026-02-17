@@ -21,7 +21,8 @@ export function Carousel() {
 
     const startIndex = currentPage * projectsPerPage;
     const endIndex = startIndex + projectsPerPage;
-    const currentProjects = (dataProjects as ProjectCardProps[]).slice(startIndex, endIndex);
+    const pagedProjects = (dataProjects as ProjectCardProps[]).slice(startIndex, endIndex);
+    const allProjects = dataProjects as ProjectCardProps[];
 
     const handlePrev = () => {
         setCurrentPage((prev) => (prev > 0 ? prev - 1 : totalPages - 1));
@@ -37,7 +38,7 @@ export function Carousel() {
             {currentPage > 0 && (
                 <button
                     onClick={handlePrev}
-                    className="flex-shrink-0 px-2 py-8 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition-all"
+                    className="hidden md:flex flex-shrink-0 px-2 py-8 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition-all"
                     aria-label="Projets précédents"
                 >
                     <svg className="w-6 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -48,14 +49,19 @@ export function Carousel() {
 
             {/* Grille des cards */}
             <div className="flex-1">
-                <Cards projects={currentProjects} />
+                <div className="md:hidden">
+                    <Cards projects={allProjects} />
+                </div>
+                <div className="hidden md:block">
+                    <Cards projects={pagedProjects} />
+                </div>
             </div>
 
             {/* Flèche droite */}
             {currentPage < totalPages - 1 && (
                 <button
                     onClick={handleNext}
-                    className="flex-shrink-0 px-2 py-8 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition-all"
+                    className="hidden md:flex flex-shrink-0 px-2 py-8 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition-all"
                     aria-label="Projets suivants"
                 >
                     <svg className="w-6 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -66,6 +72,3 @@ export function Carousel() {
         </div>
     );
 }
-
-
-
