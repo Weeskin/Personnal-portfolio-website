@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
     try {
         const { name, email, subject, message } = await request.json();
@@ -23,6 +21,16 @@ export async function POST(request: Request) {
                 { status: 400 }
             );
         }
+
+        const resendApiKey = process.env.RESEND_API_KEY;
+        if (!resendApiKey) {
+            return NextResponse.json(
+                { error: 'Configuration manquante: RESEND_API_KEY' },
+                { status: 500 }
+            );
+        }
+
+        const resend = new Resend(resendApiKey);
 
         // Envoi de l'email
         const data = await resend.emails.send({
@@ -70,4 +78,3 @@ export async function POST(request: Request) {
         );
     }
 }
-

@@ -42,7 +42,7 @@ export function Carousel() {
             {currentPage > 0 && (
                 <button
                     onClick={handlePrev}
-                    className="flex-shrink-0 px-2 py-8 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition-all"
+                    className="hidden md:flex flex-shrink-0 px-2 py-8 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition-all"
                     aria-label="Projets précédents"
                 >
                     <svg className="w-6 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -71,6 +71,3 @@ export function Carousel() {
         </div>
     );
 }
-
-
-
