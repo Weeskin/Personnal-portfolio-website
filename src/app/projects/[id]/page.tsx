@@ -59,6 +59,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
               src={project.cover}
               alt={project.title}
               fill
+              sizes="(max-width: 1024px) 100vw, (max-width: 1536px) 50vw, 100vw"
               className="object-cover"
               priority
             />

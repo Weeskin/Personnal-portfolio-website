@@ -14,23 +14,31 @@ interface ProjectCardProps {
 
 interface CardsProps {
     projects?: ProjectCardProps[];
+    direction?: 'left' | 'right' | null;
 }
 
-export function Cards({ projects }: CardsProps) {
+export function Cards({ projects, direction }: CardsProps) {
     const projectsToDisplay = projects || (dataProjects as ProjectCardProps[]).slice(0, 6);
 
-    const cardSheet = projectsToDisplay.map((project: ProjectCardProps) => {
+    const getAnimationClass = () => {
+        if (direction === 'right') return 'animate-slide-in-right';
+        if (direction === 'left') return 'animate-slide-in-left';
+        return '';
+    };
+
+    const cardSheet = projectsToDisplay.map((project: ProjectCardProps, index: number) => {
         return (
             <Link
-                key={project.id}
+                key={`${project.id}-${direction}-${index}`}
                 href={`/projects/${project.id}`}
-                className="group block"
+                className={`group block ${getAnimationClass()}`}
             >
                 <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-[#181818] transition-transform duration-300 hover:scale-105">
                     <Image
                         src={project.cover}
                         alt={project.title}
                         fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

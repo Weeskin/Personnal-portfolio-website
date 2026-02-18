@@ -16,6 +16,7 @@ interface ProjectCardProps {
 
 export function Carousel() {
     const [currentPage, setCurrentPage] = useState(0);
+    const [direction, setDirection] = useState<'left' | 'right' | null>(null);
     const projectsPerPage = 6;
     const totalPages = Math.ceil(dataProjects.length / projectsPerPage);
 
@@ -24,11 +25,15 @@ export function Carousel() {
     const currentProjects = (dataProjects as ProjectCardProps[]).slice(startIndex, endIndex);
 
     const handlePrev = () => {
+        setDirection('left');
         setCurrentPage((prev) => (prev > 0 ? prev - 1 : totalPages - 1));
+        setTimeout(() => setDirection(null), 600);
     };
 
     const handleNext = () => {
+        setDirection('right');
         setCurrentPage((prev) => (prev < totalPages - 1 ? prev + 1 : 0));
+        setTimeout(() => setDirection(null), 600);
     };
 
     return (
@@ -47,8 +52,8 @@ export function Carousel() {
             )}
 
             {/* Grille des cards */}
-            <div className="flex-1">
-                <Cards projects={currentProjects} />
+            <div className="flex-1" key={`${currentPage}-${direction}`}>
+                <Cards projects={currentProjects} direction={direction} />
             </div>
 
             {/* Flèche droite */}
