@@ -14,8 +14,8 @@ const config: Config = {
       },
       animation: {
         'fade-in': 'fade-in 0.6s ease-out forwards',
-        'slide-in-left': 'slide-in-left 0.6s ease-out forwards',
-        'slide-in-right': 'slide-in-right 0.6s ease-out forwards',
+        'slide-in-left': 'slide-in-left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
+        'slide-in-right': 'slide-in-right 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
         'slide-in-up': 'slide-in-up 0.6s ease-out forwards',
         'slide-in-down': 'slide-in-down 0.6s ease-out forwards',
         'scale-in': 'scale-in 0.6s ease-out forwards',
@@ -33,11 +33,11 @@ const config: Config = {
           'to': { opacity: '1' },
         },
         'slide-in-left': {
-          'from': { opacity: '0', transform: 'translateX(-50px)' },
+          'from': { opacity: '0', transform: 'translateX(-100px)' },
           'to': { opacity: '1', transform: 'translateX(0)' },
         },
         'slide-in-right': {
-          'from': { opacity: '0', transform: 'translateX(50px)' },
+          'from': { opacity: '0', transform: 'translateX(100px)' },
           'to': { opacity: '1', transform: 'translateX(0)' },
         },
         'slide-in-up': {
