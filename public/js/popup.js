@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 1. CONFIGURATION
     // ==========================================
     const urlImageFond = 'https://i.ibb.co/JjQ8XHnJ/Whats-App-Image-2026-03-02-at-16-08-09.jpg';
-    const urlRedirectionDon = 'VOTRE_LIEN_DE_DON_ICI'; // <-- À REMPLACER PAR LE VRAI LIEN
+    const urlRedirectionDon = 'https://dons-autun.catholique.fr/le-denier-de-leglise/ma-participation-au-denier/';
     // ==========================================
 
     // 2. Injection du style CSS dynamiquement
