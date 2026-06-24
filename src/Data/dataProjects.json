@@ -1,63 +1,48 @@
 [
 	{
-		"id": "edm09fcs",
-		"title": "Premier site en HTML/CSS",
-		"description": "Site Riding Cities - HTML/CSS",
-		"details": "Projet d'initiation aux bases HTML/CSS avec mise en page responsive, structure semantique et bonnes pratiques.",
-		"cover": "/assets/images/projects/01.webp",
-		"tag": ["HTML", "CSS"],
-		"gitUrl": "https://github.com/Weeskin/P2_-_Site-Riding-Citites-PS.git",
-		"previewUrl": "https://weeskin.github.io/P02_-_Site-Riding-Citites-PS/"
-	},
-	{
 		"id": "b7p3k9wq",
 		"title": "Agence de Voyage Booki",
 		"description": "Site Booki - HTML/CSS",
 		"details": "Integration complete d'une maquette avec gestion des breakpoints et validation W3C pour un rendu propre.",
-		"cover": "/assets/images/projects/02.webp",
+		"cover": "/assets/images/projects/booki.png",
 		"tag": ["HTML", "CSS"],
-		"gitUrl": "https://github.com/Weeskin/P3_-_Site-Booki-PS.git",
-		"previewUrl": "https://weeskin.github.io/P03_-_Site-Booki-PS/"
+		"gitUrl": "https://github.com/Weeskin/DA-P02-Booki-PS.git",
+		"previewUrl": "/demos/booki/index.html",
+		"images": [
+			"/assets/images/projects/booki-1.png",
+			"/assets/images/projects/booki-2.png",
+			"/assets/images/projects/booki-3.png"
+		]
 	},
 	{
-		"id": "k2r8m1zx",
-		"title": "Amélioration des animations CSS",
-		"description": "Site Ohmyfood - HTML/CSS",
-		"details": "Creation d'animations CSS fluides, transitions et effets d'apparition pour enrichir l'experience utilisateur.",
-		"cover": "/assets/images/projects/03.webp",
-		"tag": ["HTML", "SCSS"],
-		"gitUrl": "https://github.com/Weeskin/P4_-_Site-Ohmyfood-PS.git",
-		"previewUrl": "https://weeskin.github.io/P04_-_Site-Ohmyfood-PS/"
+		"id": "ga4m3on7",
+		"title": "Validation de formulaire en JavaScript",
+		"description": "Site GameOn - JavaScript",
+		"details": "Plateforme d'inscription a des concours de jeux video : validation de formulaire en JavaScript vanilla, gestion des erreurs et modale d'inscription.",
+		"cover": "/assets/images/projects/gameon.png",
+		"tag": ["HTML", "CSS", "JAVASCRIPT"],
+		"gitUrl": "https://github.com/Weeskin/DA-P04-GameOn-PS.git",
+		"previewUrl": "/demos/gameon/index.html",
+		"images": [
+			"/assets/images/projects/gameon-1.png",
+			"/assets/images/projects/gameon-2.png",
+			"/assets/images/projects/gameon-3.png"
+		]
 	},
 	{
-		"id": "t5n0q7vj",
-		"title": "Première création en JavaScript",
-		"description": "Site Print it - JavaScript",
-		"details": "Mise en place d'un carrousel et de comportements dynamiques en JavaScript vanilla.",
-		"cover": "/assets/images/projects/04.webp",
-		"tag": ["HTML", "SCSS", "JAVASCRIPT"],
-		"gitUrl": "https://github.com/Weeskin/P05_-_Print-it-JS-main-PS.git",
-		"previewUrl": "https://weeskin.github.io/P05_-_Print-it-JS-main-PS/"
-	},
-	{
-		"id": "r9c4h2pl",
-		"title": "JavaScript avec API",
-		"description": "Site de Sophie Bluel - Architecte d'intérieur - JavaScript",
-		"details": "Connexion a une API, gestion du back-office et manipulation du DOM pour un workflow complet.",
-		"cover": "/assets/images/projects/05.webp",
-		"tag": ["HTML", "SCSS", "JAVASCRIPT"],
-		"gitUrl": "https://github.com/Weeskin/P06-Site-Sophie-Bluel-Architecte-PS.git",
-		"previewUrl": "/assets/images/projects/05.webp"
-	},
-	{
-		"id": "m6x1s8qd",
-		"title": "Planification de projet Full-stack",
-		"description": "Planification de projet avec Qwenta",
-		"details": "Analyse des besoins, redaction de cahier des charges et planification agile du developpement.",
-		"cover": "/assets/images/projects/06.webp",
-		"tag": ["HTML", "SCSS", "JAVASCRIPT", "PLANIFICATION"],
-		"gitUrl": "https://github.com/Weeskin/P07_-_Planifiez_le_developpement_du_site_de_votre_client.git",
-		"previewUrl": "/assets/images/projects/6.webp"
+		"id": "fi6sh3y2",
+		"title": "Site accessible et factory pattern",
+		"description": "Site Fisheye - JavaScript",
+		"details": "Plateforme de photographes : construction dynamique du DOM via la factory pattern, lecteur media et forte attention a l'accessibilite (ARIA, navigation clavier).",
+		"cover": "/assets/images/projects/fisheye.png",
+		"tag": ["HTML", "CSS", "JAVASCRIPT", "A11Y"],
+		"gitUrl": "https://github.com/Weeskin/DA-P06-Fisheye.git",
+		"previewUrl": "/demos/fisheye/index.html",
+		"images": [
+			"/assets/images/projects/fisheye-1.png",
+			"/assets/images/projects/fisheye-2.png",
+			"/assets/images/projects/fisheye-3.png"
+		]
 	},
 	{
 		"id": "u3g9y5nf",
@@ -66,18 +51,8 @@
 		"details": "Premiere application React avec composants reutilisables, routing et etat local.",
 		"cover": "/assets/images/projects/07.webp",
 		"tag": ["REACT", "ROUTER", "HTML", "SCSS"],
-		"gitUrl": "https://github.com/Weeskin/P08_-_Location_immobiliere_avec_react.git",
+		"gitUrl": "https://github.com/Weeskin/DA-P11-Kasa-PS.git",
 		"previewUrl": "/assets/images/projects/07.webp"
-	},
-	{
-		"id": "p8d2l0sk",
-		"title": "Optimisation du SEO",
-		"description": "Site de Nina Carducci - Photographie - SEO",
-		"details": "Optimisation des performances, accessibilite et SEO pour ameliorer les scores Lighthouse.",
-		"cover": "/assets/images/projects/08.webp",
-		"tag": ["REACT", "ROUTER", "HTML", "SCSS"],
-		"gitUrl": "https://github.com/Weeskin/P09_-_Optimisez_le-referencement_d_un_site_de_photographe.git",
-		"previewUrl": "/assets/images/projects/08.webp"
 	},
 	{
 		"id": "v1j7a4rm",
@@ -86,7 +61,7 @@
 		"details": "Diagnostic d'erreurs, correction de bugs et optimisation du rendu avec React DevTools.",
 		"cover": "/assets/images/projects/09.webp",
 		"tag": ["HTML", "CSS", "JAVASCRIPT"],
-		"gitUrl": "https://github.com/Weeskin/P10_-_Debuggez-une-application-React.JS-main.git",
+		"gitUrl": "https://github.com/Weeskin/DA-P09-Billed-PS.git",
 		"previewUrl": "/assets/images/projects/09.webp"
 	},
 	{
@@ -96,7 +71,26 @@
 		"details": "Application complete avec authentification, gestion d'etat et integration API.",
 		"cover": "/assets/images/projects/10.webp",
 		"tag": ["REACT", "ROUTER", "HTML", "SCSS"],
-		"gitUrl": "https://github.com/Weeskin/P11_ArgentBank-website.git",
+		"gitUrl": "https://github.com/Weeskin/DA-P13-ArgentBank-PS.git",
 		"previewUrl": "/assets/images/projects/10.webp"
+	},
+	{
+		"id": "a7w2k5xq",
+		"title": "Evolution d'un logiciel audio",
+		"description": "Nouvelle application et mise à jour visuelle d'un ancien logiciel en Javascript",
+		"details": "Nouvelles fonctionnalités, nouvelles couleurs et implémenation d'un launcher",
+		"cover": "/assets/images/projects/auvitran/Capture d'écran 2025-09-09 142010.png",
+		"tag": ["JAVASCRIPT", "JQUERY", "HTML", "CSS"],
+		"gitUrl": "https://github.com/Weeskin/AVS-Monitor-V0.git",
+		"previewUrl": "/assets/images/projects/auvitran/Capture d'écran 2025-09-09 142010.png",
+		"images": [
+			"/assets/images/projects/auvitran/Capture d'écran 2025-09-09 142717.png",
+			"/assets/images/projects/auvitran/Capture d'écran 2025-09-09 143010.png",
+			"/assets/images/projects/auvitran/Capture d'écran 2025-09-09 152711.png",
+			"/assets/images/projects/auvitran/Capture d'écran 2025-09-09 152952.png",
+			"/assets/images/projects/auvitran/Capture d'écran 2025-09-09 153106.png",
+			"/assets/images/projects/auvitran/Capture d'écran 2025-05-22 153138.png",
+			"/assets/images/projects/auvitran/Capture d'écran 2025-07-02 115553.png"
+		]
 	}
 ]

@@ -20,7 +20,13 @@ export function Header() {
     return (
         <>
             <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full h-16 px-8 bg-white/90 dark:bg-black/90 backdrop-blur-sm shadow-md">
-                <h1 className="text-xl font-bold text-foreground">Pierre</h1>
+                <button
+                    onClick={() => scrollToSection('home')}
+                    className="text-xl font-bold text-foreground hover:opacity-70 transition-opacity cursor-pointer"
+                    aria-label="Retour en haut"
+                >
+                    Pierre
+                </button>
                 <nav className="hidden md:block">
                     <ul className="flex space-x-6 items-center">
                         <li>
@@ -48,8 +54,8 @@ export function Header() {
                             </button>
                         </li>
                         <a
-                            href="/assets/cv/CV-Pierre.pdf"
-                            download="CV-Pierre.pdf"
+                            href="/assets/cv/CV-2026.pdf"
+                            download="CV-Pierre-Sourice.pdf"
                             className="rounded-2xl border border-gray-500 px-4 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors inline-block"
                         >
                             Télécharger CV
@@ -126,8 +132,8 @@ export function Header() {
                             Contact
                         </button>
                         <a
-                            href="/assets/cv/CV-Pierre.pdf"
-                            download="CV-Pierre.pdf"
+                            href="/assets/cv/CV-2026.pdf"
+                            download="CV-Pierre-Sourice.pdf"
                             className="rounded-2xl border border-gray-500 px-5 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                             onClick={() => setIsMenuOpen(false)}
                         >

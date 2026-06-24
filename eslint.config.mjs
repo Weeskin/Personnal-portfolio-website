@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Démos statiques tierces servies telles quelles
+    "public/**",
   ]),
 ]);
 

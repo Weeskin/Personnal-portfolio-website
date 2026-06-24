@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import dataProjects from '@/Data/dataProjects.json';
 import { BackButton } from '@/components/BackButton';
+import { ProjectGallery } from '@/components/ProjectGallery';
 
 interface ProjectCardProps {
   id: string;
@@ -12,6 +12,7 @@ interface ProjectCardProps {
   gitUrl: string;
   previewUrl: string;
   details?: string;
+  images?: string[];
 }
 
 export function generateStaticParams() {
@@ -54,16 +55,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr] items-start 2xl:flex 2xl:flex-col 2xl:gap-12">
-          <div className="relative w-full overflow-hidden rounded-2xl bg-[#181818] aspect-square 2xl:aspect-[16/9] ">
-            <Image
-              src={project.cover}
-              alt={project.title}
-              fill
-              sizes="(max-width: 1024px) 100vw, (max-width: 1536px) 50vw, 100vw"
-              className="object-cover"
-              priority
-            />
-          </div>
+          <ProjectGallery
+            images={[project.cover, ...(project.images ?? [])]}
+            title={project.title}
+            aspectClassName="aspect-square 2xl:aspect-[16/9]"
+          />
 
           <div className="space-y-6">
             <div className="flex flex-wrap gap-2">
@@ -82,22 +78,26 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a
-                href={project.previewUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2 rounded-full bg-black text-white dark:bg-white dark:text-black"
-              >
-                Voir le projet
-              </a>
-              <a
-                href={project.gitUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2 rounded-full border border-gray-300 dark:border-white/30 text-gray-700 dark:text-gray-200"
-              >
-                Code source
-              </a>
+              {project.previewUrl && !/\.(webp|png|jpe?g|gif|avif)$/i.test(project.previewUrl) && (
+                <a
+                  href={project.previewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2 rounded-full bg-black text-white dark:bg-white dark:text-black font-medium hover:scale-105 transition-transform"
+                >
+                  Voir le projet
+                </a>
+              )}
+              {project.gitUrl && (
+                <a
+                  href={project.gitUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2 rounded-full border border-gray-300 dark:border-white/30 text-gray-700 dark:text-gray-200 font-medium hover:scale-105 transition-transform"
+                >
+                  Code source
+                </a>
+              )}
             </div>
           </div>
         </div>
