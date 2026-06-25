@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Theme clair/obscur pilote par la classe .dark sur <html>
+   (la classe est posee au chargement selon localStorage ou la preference systeme) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Google Sans - Polices locales */
 @font-face {
   font-family: 'Google Sans';
@@ -78,11 +82,10 @@ html {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Variables du thème sombre : appliquées via la classe .dark sur <html> */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
