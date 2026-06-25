@@ -29,7 +29,7 @@ export function ProjectGallery({ images, title, aspectClassName = 'aspect-video'
 
     return (
         <div className="w-full">
-            <div className={`relative w-full overflow-hidden rounded-2xl bg-[#181818] ${aspectClassName}`}>
+            <div className={`relative w-full overflow-hidden rounded-2xl bg-gray-100 dark:bg-[#181818] ${aspectClassName}`}>
                 {images.map((image, i) => (
                     <Image
                         key={image}

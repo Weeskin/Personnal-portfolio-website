@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import dataProjects from '@/Data/dataProjects.json';
 
 interface ProjectCardProps {
@@ -7,6 +6,9 @@ interface ProjectCardProps {
     title: string,
     description: string,
     cover: string,
+    logo?: string,
+    logoText?: string,
+    logoBg?: string,
     tag: string[],
     gitUrl: string,
     previewUrl: string
@@ -31,29 +33,40 @@ export function Cards({ projects, direction }: CardsProps) {
             <Link
                 key={`${project.id}-${direction}-${index}`}
                 href={`/projects/${project.id}`}
-                className={`group block ${getAnimationClass()}`}
+                className={`group block h-full ${getAnimationClass()}`}
                 style={{ animationDelay: `${index * 80}ms` }}
             >
-                <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-[#181818] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/30">
-                    <Image
-                        src={project.cover}
-                        alt={project.title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
+                <div className="flex h-full flex-col overflow-hidden rounded-2xl bg-white dark:bg-[#181818] ring-1 ring-black/5 dark:ring-white/5 shadow-sm shadow-black/5 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/15 dark:hover:shadow-black/40 hover:ring-black/10 dark:hover:ring-white/10">
+                    {/* Zone logo, fond teinte par projet */}
+                    <div
+                        className="relative flex aspect-[16/10] shrink-0 items-center justify-center overflow-hidden p-8 sm:p-10"
+                        style={{ backgroundColor: project.logoBg || '#f5f5f7' }}
+                    >
+                        {/* Halo doux pour donner du relief */}
+                        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(255,255,255,0.18),transparent_70%)]" />
+                        {project.logo ? (
+                            /* eslint-disable-next-line @next/next/no-img-element */
+                            <img
+                                src={project.logo}
+                                alt={project.title}
+                                loading="lazy"
+                                className="relative max-h-[64%] max-w-[80%] object-contain transition-transform duration-500 group-hover:scale-105"
+                            />
+                        ) : (
+                            <span className="relative text-2xl sm:text-3xl font-semibold tracking-tight text-white/90 transition-transform duration-500 group-hover:scale-105">
+                                {project.logoText || project.title}
+                            </span>
+                        )}
+                    </div>
 
-                    {/* Film noir du bas pour faire ressortir le texte */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
-
-                    {/* Contenu en bas, qui monte au survol */}
-                    <div className="absolute inset-x-0 bottom-0 p-5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                        <h3 className="text-white text-lg font-semibold leading-snug [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]">{project.title}</h3>
-                        <div className="mt-3 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
+                    {/* Pied : titre + tags */}
+                    <div className="flex flex-1 flex-col p-4 sm:p-5">
+                        <h3 className="text-gray-900 dark:text-white text-base sm:text-lg font-semibold leading-snug">{project.title}</h3>
+                        <div className="mt-3 flex flex-wrap gap-2">
                             {project.tag.slice(0, 4).map((item) => (
                                 <span
                                     key={item}
-                                    className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-white/15 text-white backdrop-blur-sm"
+                                    className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-black/5 text-gray-600 dark:bg-white/10 dark:text-white/80"
                                 >
                                     {item}
                                 </span>
