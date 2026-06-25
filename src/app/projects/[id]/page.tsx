@@ -49,7 +49,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
     <main className="min-h-screen px-6 py-16 max-w-6xl mx-auto w-full">
       <div className="flex flex-col gap-10">
         <div className="space-y-4">
-          <BackButton label="Retour aux projets" href="/#projects" />
+          <BackButton label="Retour aux projets" href="/" />
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white">{project.title}</h1>
           <p className="text-lg text-gray-600 dark:text-gray-300">{project.description}</p>
         </div>

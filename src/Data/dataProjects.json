@@ -2,6 +2,7 @@
 	{
 		"id": "b7p3k9wq",
 		"title": "Agence de Voyage Booki",
+		"brand": "Booki",
 		"description": "Site Booki - HTML/CSS",
 		"details": "Integration complete d'une maquette avec gestion des breakpoints et validation W3C pour un rendu propre.",
 		"cover": "/assets/images/projects/booki.png",
@@ -19,6 +20,7 @@
 	{
 		"id": "ga4m3on7",
 		"title": "Validation de formulaire en JavaScript",
+		"brand": "GameOn",
 		"description": "Site GameOn - JavaScript",
 		"details": "Plateforme d'inscription a des concours de jeux video : validation de formulaire en JavaScript vanilla, gestion des erreurs et modale d'inscription.",
 		"cover": "/assets/images/projects/gameon.png",
@@ -36,6 +38,7 @@
 	{
 		"id": "fi6sh3y2",
 		"title": "Site accessible et factory pattern",
+		"brand": "Fisheye",
 		"description": "Site Fisheye - JavaScript",
 		"details": "Plateforme de photographes : construction dynamique du DOM via la factory pattern, lecteur media et forte attention a l'accessibilite (ARIA, navigation clavier).",
 		"cover": "/assets/images/projects/fisheye.png",
@@ -53,6 +56,7 @@
 	{
 		"id": "p3t1tpl4",
 		"title": "Algorithme de recherche de recettes",
+		"brand": "Les Petits Plats",
 		"description": "Site Les Petits Plats - JavaScript",
 		"details": "Moteur de recherche de recettes avec filtres avancés (ingrédients, appareils, ustensiles), centré sur l'optimisation de l'algorithme de recherche et une interface réactive.",
 		"cover": "/assets/images/projects/petitsplats.png",
@@ -70,6 +74,7 @@
 	{
 		"id": "u3g9y5nf",
 		"title": "Début de React",
+		"brand": "Kasa",
 		"description": "Site de Location immobilière - React",
 		"details": "Premiere application React avec composants reutilisables, routing et etat local.",
 		"cover": "/assets/images/projects/kasa.png",
@@ -87,6 +92,7 @@
 	{
 		"id": "v1j7a4rm",
 		"title": "Debeugage d'une application React avec DevTools",
+		"brand": "Billed",
 		"description": "Site d'une agence d'événementielle - 724 Events - React",
 		"details": "Diagnostic d'erreurs, correction de bugs et optimisation du rendu avec React DevTools.",
 		"cover": "/assets/images/projects/09.webp",
@@ -99,6 +105,7 @@
 	{
 		"id": "z4e6t3bn",
 		"title": "Création d'une application bancaire",
+		"brand": "ArgentBank",
 		"description": "Site d'une nouvelle application bancaire - ArgenBank - React",
 		"details": "Application complete avec authentification, gestion d'etat et integration API.",
 		"cover": "/assets/images/projects/argentbank.png",
@@ -114,6 +121,7 @@
 	{
 		"id": "a7w2k5xq",
 		"title": "Evolution d'un logiciel audio",
+		"brand": "AVS Monitor",
 		"description": "Nouvelle application et mise à jour visuelle d'un ancien logiciel en Javascript",
 		"details": "Nouvelles fonctionnalités, nouvelles couleurs et implémenation d'un launcher",
 		"cover": "/assets/images/projects/auvitran/Capture d'écran 2025-09-09 142010.png",

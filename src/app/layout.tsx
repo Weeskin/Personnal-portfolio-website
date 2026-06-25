@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pierresourice.fr"),
@@ -38,7 +40,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="font-google-sans">
-        {children}
+        <Header />
+        <div className="pt-16">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
