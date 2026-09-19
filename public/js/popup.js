@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Vérification : domaine autorisé uniquement
-    if (window.location.hostname !== 'autun.catholique.fr') {
+    // Vérification : domaine et page d'accueil uniquement
+    const hostname = window.location.hostname;
+    const pathname = window.location.pathname;
+    if (hostname !== 'autun.catholique.fr' || (pathname !== '/' && pathname !== '/index.php')) {
         return;
     }
 
