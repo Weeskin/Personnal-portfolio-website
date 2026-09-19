@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
       #popup-bg { width: 100%; height: auto; display: block; border-radius: 10px; }
       #popup-close { position: absolute; top: 12px; right: 18px; color: #1a3a6b; font-size: 32px; font-family: Arial, sans-serif; font-weight: bold; cursor: pointer; line-height: 1; z-index: 10; transition: transform 0.2s; }
       #popup-close:hover { transform: scale(1.2); }
-      #popup-btn { position: absolute; bottom: 10%; left: 75%; transform: translateX(-50%); background-color: #1a3a6b; color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 50px; font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; z-index: 10; box-shadow: 0 4px 10px rgba(26, 58, 107, 0.4); transition: all 0.2s; white-space: nowrap; }
+      #popup-btn { position: absolute; bottom: 20%; left: 56%; transform: translateX(-50%); background-color: #1a3a6b; color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 50px; font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; z-index: 10; box-shadow: 0 4px 10px rgba(26, 58, 107, 0.4); transition: all 0.2s; white-space: nowrap; }
       #popup-btn:hover { background-color: #122a52; transform: translateX(-50%) scale(1.04); color: #ffffff; }
       @media (max-width: 600px) { #popup-btn { font-size: 14px; padding: 8px 16px; bottom: 8%; left: 50%; transform: translateX(-50%); } #popup-btn:hover { transform: translateX(-50%) scale(1.04); } #popup-close { top: 6px; right: 12px; font-size: 26px; } }
     `;
