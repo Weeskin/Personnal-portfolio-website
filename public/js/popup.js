@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     // 1. CONFIGURATION
     // ==========================================
-    const urlImageFond = '/images/messe-plein-air.jpg';
+    const urlImageFond = 'https://pierresourice.fr/images/messe-plein-air.jpg';
     const urlRedirection = 'https://autun.catholique.fr/annoncer-accompagner/services-des-pelerinages';
     // ==========================================
 
