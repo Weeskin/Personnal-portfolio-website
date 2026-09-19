@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    // Vérification : domaine autorisé uniquement
+    if (window.location.hostname !== 'autun.catholique.fr') {
+        return;
+    }
+
     // Vérification : si l'utilisateur a déjà vu la popup, on arrête tout
     if (sessionStorage.getItem('popupDenierVue') === 'oui') {
         return;
