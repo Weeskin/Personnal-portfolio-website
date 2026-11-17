@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
     style.innerHTML = `
       #popup-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 999999; display: flex; justify-content: center; align-items: center; opacity: 0; visibility: hidden; transition: opacity 0.4s ease, visibility 0.4s; }
       #popup-overlay.show-popup { opacity: 1; visibility: visible; }
-      #popup-container { display: grid; grid-template-areas: "stack"; width: 90%; max-width: 860px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transform: translateY(20px); transition: transform 0.4s ease; }
+      #popup-container { display: grid; grid-template-areas: "stack"; width: 90%; max-width: 600px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transform: translateY(20px); transition: transform 0.4s ease; }
       #popup-overlay.show-popup #popup-container { transform: translateY(0); }
       #popup-bg { grid-area: stack; width: 100%; height: auto; display: block; border-radius: 10px; }
       #popup-ui { grid-area: stack; position: relative; border-radius: 10px; }
       #popup-close { position: absolute; top: 0; right: 4px; color: #9b2790; font-size: 32px; font-family: Arial, sans-serif; font-weight: bold; cursor: pointer; line-height: 1; z-index: 10; transition: transform 0.2s; }
       #popup-close:hover { transform: scale(1.2); }
       /* Zone cliquable invisible posée sur l'adresse e-mail de l'image */
-      #popup-mail { position: absolute; left: 45%; top: 61%; width: 10%; height: 4%; z-index: 10; }
+      #popup-mail { position: absolute; left: 45.5%; top: 61.5%; width: 33.5%; height: 5%; z-index: 10; }
       @media (max-width: 600px) { #popup-close { font-size: 26px; } }
     `;
     document.head.appendChild(style);
