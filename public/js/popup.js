@@ -8,15 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Vérification : si l'utilisateur a déjà vu la popup, on arrête tout
-    if (sessionStorage.getItem('popupDenierVue') === 'oui') {
+    const cleSession = 'popupPanneMessagerieVue';
+    if (sessionStorage.getItem(cleSession) === 'oui') {
         return;
     }
 
     // ==========================================
     // 1. CONFIGURATION
     // ==========================================
-    const urlImageFond = 'https://pierresourice.fr/images/messe-plein-air.jpg';
-    const urlRedirection = 'https://autun.catholique.fr/annoncer-accompagner/services-des-pelerinages';
+    const urlImageFond = 'https://pierresourice.fr/images/panne-messagerie.jpg';
+    const emailContact = 'economat.autun@gmail.com';
     // ==========================================
 
     // 2. Injection du style CSS dynamiquement
@@ -28,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
       #popup-overlay.show-popup #popup-container { transform: translateY(0); }
       #popup-bg { grid-area: stack; width: 100%; height: auto; display: block; border-radius: 10px; }
       #popup-ui { grid-area: stack; position: relative; border-radius: 10px; }
-      #popup-close { position: absolute; top: 12px; right: 18px; color: #1a3a6b; font-size: 32px; font-family: Arial, sans-serif; font-weight: bold; cursor: pointer; line-height: 1; z-index: 10; transition: transform 0.2s; }
+      #popup-close { position: absolute; top: 0; right: 4px; color: #9b2790; font-size: 32px; font-family: Arial, sans-serif; font-weight: bold; cursor: pointer; line-height: 1; z-index: 10; transition: transform 0.2s; }
       #popup-close:hover { transform: scale(1.2); }
-      #popup-btn { position: absolute; bottom: 18%; right: 10%; background-color: #1a3a6b; color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 50px; font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; z-index: 10; box-shadow: 0 4px 10px rgba(26, 58, 107, 0.4); transition: all 0.2s; white-space: nowrap; }
-      #popup-btn:hover { background-color: #122a52; transform: scale(1.04); color: #ffffff; }
-      @media (max-width: 600px) { #popup-btn { font-size: 14px; padding: 8px 16px; bottom: 8%; right: 5%; } #popup-close { top: 6px; right: 12px; font-size: 26px; } }
+      /* Zone cliquable invisible posée sur l'adresse e-mail de l'image */
+      #popup-mail { position: absolute; left: 45%; top: 61%; width: 35%; height: 6%; z-index: 10; }
+      @media (max-width: 600px) { #popup-close { font-size: 26px; } }
     `;
     document.head.appendChild(style);
 
@@ -46,23 +47,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const img = document.createElement('img');
     img.id = 'popup-bg';
     img.src = urlImageFond;
-    img.alt = 'Messe en plein air';
+    img.alt = 'Panne de messagerie : nous rencontrons actuellement une panne de notre messagerie Outlook. '
+            + 'Merci de privilégier les contacts par téléphone. En cas d\'urgence : ' + emailContact;
 
     const closeBtn = document.createElement('div');
     closeBtn.id = 'popup-close';
     closeBtn.innerHTML = '&times;';
 
-    const ctaBtn = document.createElement('a');
-    ctaBtn.id = 'popup-btn';
-    ctaBtn.href = urlRedirection;
-    ctaBtn.target = '_blank';
-    ctaBtn.rel = 'noopener noreferrer';
-    ctaBtn.textContent = 'Retrouvez les infos ici';
+    const mailLink = document.createElement('a');
+    mailLink.id = 'popup-mail';
+    mailLink.href = 'mailto:' + emailContact;
+    mailLink.title = 'Écrire à ' + emailContact;
+    mailLink.setAttribute('aria-label', 'Écrire à ' + emailContact);
 
     const ui = document.createElement('div');
     ui.id = 'popup-ui';
     ui.appendChild(closeBtn);
-    ui.appendChild(ctaBtn);
+    ui.appendChild(mailLink);
 
     // Assemblage
     container.appendChild(img);
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 5. Affichage final et sauvegarde dans la session
     setTimeout(() => {
         overlay.classList.add('show-popup');
-        sessionStorage.setItem('popupDenierVue', 'oui');
+        sessionStorage.setItem(cleSession, 'oui');
     }, 800);
 
 });
