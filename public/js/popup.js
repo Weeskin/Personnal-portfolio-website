@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
       #popup-close { position: absolute; top: 0; right: 4px; color: #9b2790; font-size: 32px; font-family: Arial, sans-serif; font-weight: bold; cursor: pointer; line-height: 1; z-index: 10; transition: transform 0.2s; }
       #popup-close:hover { transform: scale(1.2); }
       /* Zone cliquable invisible posée sur l'adresse e-mail de l'image */
-      #popup-mail { position: absolute; left: 45%; top: 61%; width: 35%; height: 6%; z-index: 10; }
+      #popup-mail { position: absolute; left: 45%; top: 61%; width: 10%; height: 4%; z-index: 10; }
       @media (max-width: 600px) { #popup-close { font-size: 26px; } }
     `;
     document.head.appendChild(style);
